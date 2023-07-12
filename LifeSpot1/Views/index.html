@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LifeSpot1</title>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script src="../Static/JS/index.js"></script>
+    <script>
+        // Проверка на возраст
+        checkAge();
+
+        // сохранение сессии
+        handleSession()
+
+        // вывод данных сессии в консоль
+        sessionLog();
+
+        // функция для получения пользовательского ввода
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+    </script>
+    <script>setTimeout(() => alert("Подпишитесь на наш Инстаграмм"), 60000)</script>
+</head>
+
+<body>
+    <header id="header-index">
+        <h1>LifeSpot1 - прямые трансляции с улиц</h1>
+        <p>Покажем, что происходит прямо сейчас</p>
+    </header>
+
+    <!--SIDEBAR-->
+
+    <p>
+        <b>Поиск:</b><br>
+        <input type="text" oninput="
+            filtarionContentByInputFunction();
+            " size=50%>
+    </p>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/e3IGUhlmXMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Санкт- Петербург</h3>
+    </div>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Нью-Йорк</h3>
+    </div>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t-6cCrPX8ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Лондон</h3>
+    </div>
+    </div>
+    <div>
+
+    </div>
+    <!--FOOTER-->
+</body>
+</html>
